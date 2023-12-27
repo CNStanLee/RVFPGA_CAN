@@ -245,6 +245,7 @@ unsigned char CAN_Receive_Buffer(unsigned char *CAN_RX_Buf)
 	}
 	MCP2515_WriteByte(CANINTF,0);//清除中断标志位(中断标志寄存器必须由MCU清零)
 	return len;
+	
 }
 
 
